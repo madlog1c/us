@@ -1,0 +1,160 @@
+html, body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; /* Center horizontally */
+    height: 100%;
+}
+
+#animation-container {
+    /* position: relative;
+    transform: translate(-0%, -10%); */
+    width: 100%;
+    margin-bottom: 200px;
+    min-width: 1000px;
+}
+
+
+
+
+.icon-container {
+    z-index: 3000;
+    position: absolute; /* Position relative to #container */
+    top: 60%; /* Adjust this value to move icons up or down */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+.icon-row {
+    display: flex;
+    justify-content: center; /* Center icons in each row */
+    margin-bottom: 10px;
+}
+
+.icon-link {
+    display: inline-block;
+    margin: 0 10px; /* Spacing between icons */
+    text-decoration: none; /* Remove default link styling */
+}
+
+
+
+.icon-link img {
+    z-index: 3001;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    transition: transform 0.3s ease; /* Optional: for hover effect */
+}
+
+.icon-link:hover img {
+    transform: scale(1.1); /* Scale up icon on hover */
+}
+
+.row-label {
+    margin-top: 10px;
+    margin-right: 10px; /* Space between label and icons */
+    font-size: 24px; /* Adjust as needed */
+    color: rgb(200, 200, 200); /* Adjust color as needed */
+    /* Additional styling for the text */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #animation-container {
+        min-width: 1000px;
+    }
+    .icon-link img {
+        width: 30px; /* Smaller icon size */
+        height: 30px; /* Smaller icon size */
+    }
+    .icon-row {
+        flex-direction: column; /* Stack label and icons vertically */
+    }
+
+    .row-label {
+        margin-bottom: 10px; /* Space between label and icons */
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .icon-wrapper {
+        justify-content: center; /* Center icons if desired */
+        display: flex;
+        flex-wrap: nowrap;
+        min-width: 0;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    #animation-container {
+        min-width: 1400px;
+    }
+    .icon-link img {
+        width: 30px; /* Smaller icon size */
+        height: 30px; /* Smaller icon size */
+    }
+    .row-label {
+        margin-bottom: 10px; /* Space between label and icons */
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .icon-wrapper {
+        justify-content: center; /* Center icons if desired */
+        display: flex;
+        flex-wrap: nowrap;
+        min-width: 0;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px to 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    #animation-container {
+        min-width: 1600px;
+    }
+    .icon-link img {
+        width: 30px; /* Smaller icon size */
+        height: 30px; /* Smaller icon size */
+    }
+    .row-label {
+        margin-bottom: 10px; /* Space between label and icons */
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .icon-wrapper {
+        justify-content: center; /* Center icons if desired */
+        display: flex;
+        flex-wrap: nowrap;
+        min-width: 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    #animation-container {
+        min-width: 1800px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+    #animation-container {
+        min-width: 2000px;
+    }
+}
