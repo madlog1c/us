@@ -18,7 +18,7 @@ html, body {
     /* position: relative;
     transform: translate(-0%, -10%); */
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
     min-width: 1000px;
 }
 
@@ -28,7 +28,7 @@ html, body {
 .icon-container {
     z-index: 3000;
     position: absolute; /* Position relative to #container */
-    top: 60%; /* Adjust this value to move icons up or down */
+    top: 45%; /* Adjust this value to move icons up or down */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -65,18 +65,25 @@ html, body {
     margin-right: 10px; /* Space between label and icons */
     font-size: 24px; /* Adjust as needed */
     color: rgb(200, 200, 200); /* Adjust color as needed */
+    font-family: Arial, Helvetica, sans-serif;
     /* Additional styling for the text */
 }
+#walrus-title {
+    font-size: 28px; /* Adjust the font size as needed */
+}
+
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     #animation-container {
-        min-width: 1000px;
+        min-width: 1400px;
     }
-    .icon-link img {
-        width: 30px; /* Smaller icon size */
-        height: 30px; /* Smaller icon size */
-    }
+    /* .icon-link img {
+        width: 30px;
+        height: 30px;
+    } */
     .icon-row {
         flex-direction: column; /* Stack label and icons vertically */
     }
@@ -86,6 +93,9 @@ html, body {
         font-size: 18px;
         margin-top: 4px;
         margin-bottom: 4px;
+    }
+    #walrus-title {
+        font-size: 24px; /* Adjust the font size as needed */
     }
 
     .icon-wrapper {
@@ -102,15 +112,18 @@ html, body {
     #animation-container {
         min-width: 1400px;
     }
-    .icon-link img {
-        width: 30px; /* Smaller icon size */
-        height: 30px; /* Smaller icon size */
-    }
+    /* .icon-link img {
+        width: 30px;
+        height: 30px;
+    } */
     .row-label {
         margin-bottom: 10px; /* Space between label and icons */
         font-size: 18px;
         margin-top: 4px;
         margin-bottom: 4px;
+    }
+    #walrus-title {
+        font-size: 24px; /* Adjust the font size as needed */
     }
 
     .icon-wrapper {
@@ -126,15 +139,18 @@ html, body {
     #animation-container {
         min-width: 1600px;
     }
-    .icon-link img {
-        width: 30px; /* Smaller icon size */
-        height: 30px; /* Smaller icon size */
-    }
+    /* .icon-link img {
+        width: 30px;
+        height: 30px;
+    } */
     .row-label {
         margin-bottom: 10px; /* Space between label and icons */
         font-size: 18px;
         margin-top: 4px;
         margin-bottom: 4px;
+    }
+    #walrus-title {
+        font-size: 24px; /* Adjust the font size as needed */
     }
 
     .icon-wrapper {
@@ -157,4 +173,20 @@ html, body {
     #animation-container {
         min-width: 2000px;
     }
+}
+
+.icon-row:first-child {
+    margin-bottom: 69px; /* Adjust this value as needed */
+}
+
+
+
+#walrus-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+#donate-icons img {
+    width: 60px;
+    height: 60px;
 }
