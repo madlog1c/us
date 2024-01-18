@@ -15,20 +15,18 @@ html, body {
 }
 
 #animation-container {
-    transform: scale(2);
-    width: 100%;
-    margin-bottom: 555px;
-    min-width: 1000px;
+    transform: scale(2.2);
+    margin-bottom: 65vh;
 }
-
 
 
 
 .icon-container {
     z-index: 3000;
     position: absolute;
-    top: 30%; /* Adjust to move icons up or down */
+    top: 28%; /* Adjust to move icons up/down */
     left: 50%;
+    width: 100%;
     transform: translateX(-50%);
     text-align: center;
 
@@ -70,11 +68,12 @@ html, body {
 
 
 .icon-row:first-child {
-    margin-bottom: 120px;
+    /* margin-bottom: 120px; */
+    margin-bottom: 12vh;
 }
 
 .icon-row:nth-child(3) {
-    margin-bottom: 30px;
+    margin-bottom: 4vh;
 }
 
 
@@ -95,95 +94,135 @@ html, body {
 
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+
+
+/* Extra small devices (portrait phones, 320px and down) */
+@media only screen and (max-width: 320px) {
     #animation-container {
-        min-width: 1400px;
+        transform: scale(4.9);
+        margin-bottom: 63vh;
     }
-
+    .icon-link img {
+        width: 48px;
+        height: 48px;
+    }
+    .icon-link img.wide-icon {
+        width: auto;
+        height: 36px;
+    }
+    #walrus-icons img, #donate-icons img {
+        width: 36px;
+        height: 36px;
+    }
+    #walrus-icons img.wide-icon, #donate-icons img.wide-icon {
+        width: auto;
+        height: 36px;
+    }
     .icon-row {
-        flex-direction: column;
-    }
-
-    .row-label {
-        margin-bottom: 10px;
-        font-size: 18px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-    #walrus-title {
-        font-size: 24px;
-    }
-
-    .icon-wrapper {
-        justify-content: center;
-        display: flex;
         flex-wrap: nowrap;
-        min-width: 0;
+    }
+    .icon-container {
+        top: 26%; /* Adjust to move icons up/down */
+    }
+    .icon-link {
+        margin: 0 0px; /* Spacing between icons */
     }
 }
 
+/* Small devices (portrait phones, 321px to 400px) */
+@media only screen and (min-width: 321px) and (max-width: 400px) {
+    #animation-container {
+        transform: scale(4.5);
+        margin-bottom: 63vh;
+    }
+    .icon-link img {
+        width: 58px;
+        height: 58px;
+    }
+    .icon-link img.wide-icon {
+        width: auto;
+        height: 48px;
+    }
+    #walrus-icons img, #donate-icons img {
+        width: 48px;
+        height: 48px;
+    }
+    #walrus-icons img.wide-icon, #donate-icons img.wide-icon {
+        width: auto;
+        height: 48px;
+    }
+    .icon-row {
+        flex-wrap: nowrap;
+    }
+    .icon-container {
+        top: 26%; /* Adjust to move icons up/down */
+    }
+    .icon-link {
+        margin: 0 3px; /* Spacing between icons */
+    }
+}
 
-/* Small devices (portrait tablets and large phones, 600px to 768px) */
+/* Medium devices (phones, 401px to 600px) */
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    #animation-container {
+        transform: scale(4.2);
+        margin-bottom: 63vh;
+    }
+    .icon-link img {
+        width: 58px;
+        height: 58px;
+    }
+    .icon-link img.wide-icon {
+        width: auto;
+        height: 48px;
+    }
+    #walrus-icons img, #donate-icons img {
+        width: 48px;
+        height: 48px;
+    }
+    #walrus-icons img.wide-icon, #donate-icons img.wide-icon {
+        width: auto;
+        height: 48px;
+    }
+    .icon-row {
+        flex-wrap: nowrap;
+    }
+    .icon-container {
+        top: 26%; /* Adjust to move icons up/down */
+    }
+    .icon-link {
+        margin: 0 3px; /* Spacing between icons */
+    }
+}
+
+/* Large devices (tablets, 601px to 768px) */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
     #animation-container {
-        min-width: 1400px;
-    }
-
-    .row-label {
-        margin-bottom: 10px; /* Space between label and icons */
-        font-size: 18px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-    #walrus-title {
-        font-size: 24px;
-    }
-
-    .icon-wrapper {
-        justify-content: center;
-        display: flex;
-        flex-wrap: nowrap;
-        min-width: 0;
+        transform: scale(3.8);
+        margin-bottom: 63vh;
     }
 }
 
-/* Medium devices (landscape tablets, 768px to 992px) */
+/* Extra large devices (small laptops, 769px to 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     #animation-container {
-        min-width: 1600px;
-    }
-
-    .row-label {
-        margin-bottom: 10px;
-        font-size: 18px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-    }
-
-    #walrus-title {
-        font-size: 24px;
-    }
-
-    .icon-wrapper {
-        justify-content: center;
-        display: flex;
-        flex-wrap: nowrap;
-        min-width: 0;
+        transform: scale(3.6);
+        margin-bottom: 63vh;
     }
 }
 
-/* Large devices (laptops/desktops, 992px to 1200px) */
+/* XXL devices (laptops/desktops, 993px to 1200px) */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
     #animation-container {
-        min-width: 1800px;
+        transform: scale(3);
+        margin-bottom: 63vh;
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* XXXL devices (large laptops and desktops, 1201px and up) */
 @media only screen and (min-width: 1201px) {
     #animation-container {
-        min-width: 2000px;
+        transform: scale(2.2);
+        margin-bottom: 63vh;
     }
 }
-
